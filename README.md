@@ -1,36 +1,28 @@
 # Wordcloudx
-A program that creates a visual representation of the most common words within the text data. Technologies used : Matplotlib, Numpy.
-## Installation
+Welcome to WordCloudx, where you can effortlessly create captivating and interactive word cloud displays from your text.
+### Installations
 
 If you are using pip:
 
-    pip install wordcloud
+    pip install flask stop-words wordcloud numpy Pillow nltk matplotlib
 
-If you are using conda, you can install from the `conda-forge` channel:
+If you prefer using conda for package management:
 
-    conda install -c conda-forge wordcloud
-#### Installation notes
+	conda install flask numpy matplotlib
+ 
+Running Flask Application <br>
+To run the Flask application:
+Make sure you have all the dependencies installed using either pip or conda.<br>
+Open a terminal or command prompt and navigate to the directory where app.py is located.
+Run the application with the following command:
 
-wordcloud depends on `numpy`, `pillow`, and `matplotlib`.
+	python app.py
+Once the Flask application is running, open a web browser and go to http://localhost:5000 to access the WordCloudx application.<br>
+Now you're ready to effortlessly generate captivating word cloud displays from your text using WordCloudx!
+    
 
-If there are no wheels available for your version of python, installing the
-package requires having a C compiler set up. Before installing a compiler, report
-an issue describing the version of python and operating system being used.
+
 
 ![wordcloudm](https://github.com/Comder101/Wordcloudx/assets/86362195/1e1b8e87-9940-4daa-9776-09d615d32313)
-
-## Command-line usage
-
-The `wordcloud_cli` tool can be used to generate word clouds directly from the command-line:
-
-	$ wordcloud_cli --text mytext.txt --imagefile wordcloud.png
-
-If you're dealing with PDF files, then `pdftotext`, included by default with many Linux distribution, comes in handy:
-
-	$ pdftotext mydocument.pdf - | wordcloud_cli --imagefile wordcloud.png
-
-In the previous example, the `-` argument orders `pdftotext` to write the resulting text to stdout, which is then piped to the stdin of `wordcloud_cli.py`.
-
-Use `wordcloud_cli --help` so see all available options.
 
 
