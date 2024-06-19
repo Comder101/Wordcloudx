@@ -17,7 +17,7 @@ If there are no wheels available for your version of python, installing the
 package requires having a C compiler set up. Before installing a compiler, report
 an issue describing the version of python and operating system being used.
 
-![wordcloudfinal](https://github.com/Comder101/Wordcloudx/assets/86362195/a4dadb06-d129-4fd1-b844-a2f55fea5dcc)
+![wordcloudm](https://github.com/Comder101/Wordcloudx/assets/86362195/1e1b8e87-9940-4daa-9776-09d615d32313)
 
 ## Command-line usage
 
