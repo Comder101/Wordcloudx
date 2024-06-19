@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cloud Generator</title>
+</head>
+<body>
+    <h1>Word Cloud Generator</h1>
+    <form action="{{ url_for('generate_wordcloud') }}" method="post" enctype="multipart/form-data">
+        <label for="text_file">Upload Text File:</label>
+        <input type="file" id="text_file" name="text_file" accept=".txt">
+        <br><br>
+        <label for="image_file">Upload Image File for Color:</label>
+        <input type="file" id="image_file" name="image_file" accept="image/jpeg, image/png">
+        <br><br>
+        <label for="shape_file">Upload Image File for Shape:</label>
+        <input type="file" id="shape_file" name="shape_file" accept="image/jpeg, image/png">
+        <br><br>
+        <button type="submit">Generate Word Cloud</button>
+    </form>
+</body>
+</html>
